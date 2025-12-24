@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F6FF">
+
+    <!-- Toolbar -->
+    <include
+        android:id="@+id/mainToolbar"
+        layout="@layout/activity_toolbar" />
+
+    <!-- Page Title -->
+    <TextView
+        android:id="@+id/txtPageTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CPR Instructions"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:fontFamily="@font/poppins"
+        android:textColor="#cc1616"
+        android:textStyle="bold"
+        android:layout_below="@id/mainToolbar"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="16dp"
+        android:layout_marginBottom="4dp"/>
+
+    <!-- Speak Instructions Button (FIXED AT BOTTOM) -->
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/btn_speak_instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="▶️ Speak Instructions"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        app:backgroundTint="#8E7CC3"
+        app:icon="@null"
+        android:elevation="6dp" />
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/txtPageTitle"
+        android:layout_above="@id/btn_speak_instructions"
+        android:fillViewport="true"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="16dp">
+
+        <LinearLayout
+            android:id="@+id/instruction_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="➤  Steps to Follow"
+                android:textSize="18sp"
+                android:background="@drawable/bluebg"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins"
+                android:textColor="#1A237E"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Tap their shoulder and shout to check responsiveness. Look for normal breathing or chest movement."
+                android:layout_marginBottom="8dp"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. If there is no response or no normal breathing, call emergency services immediately."
+                android:layout_marginBottom="8dp"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. Begin chest compressions. Place your hands in the center of the chest and push hard and fast at 100–120 compressions per minute."
+                android:layout_marginBottom="8dp"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4. If trained, give 2 rescue breaths after every 30 compressions. If not trained, continue hands-only CPR until help arrives."
+                android:layout_marginBottom="20dp"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🚫 Avoid These Actions"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:background="@drawable/redbg"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins"
+                android:textColor="#cc1616"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="❌ Do NOT perform CPR if the person is breathing normally."
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="❌ Do NOT stop CPR unless the person wakes up, help arrives, or you become too exhausted."
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="❌ Do NOT bend your elbows while giving compressions."
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="❌ Do NOT give rescue breaths if you are untrained or uncomfortable—hands-only CPR is safer."
+                android:textSize="16sp"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🔍 Possible Causes"
+                android:gravity="center"
+                android:background="@drawable/greenbg"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins"
+                android:textColor="#1B5E20"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Heart attack or sudden cardiac arrest."
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Respiratory failure or severe breathing problems."
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Drowning or near-drowning."
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Serious trauma, electric shock, or choking leading to cardiac arrest."
+                android:textSize="16sp"
+                android:layout_marginBottom="80dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

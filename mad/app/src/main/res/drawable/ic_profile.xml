@@ -1,0 +1,16 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Person head + body -->
+    <path
+        android:fillColor="#1A237E"
+        android:pathData="M12,12c2.7,0 4.8-2.1 4.8-4.8S14.7,2.4 12,2.4 7.2,4.5 7.2,7.2 9.3,12 12,12zM12,14.4c-3.2,0-9.6,1.6-9.6,4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/>
+
+    <!-- Tick moved slightly to the right -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M16,12l2,2l4,-4l1.5,1.5l-5.5,5.5l-3,-3z"/>
+</vector>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F6FF">
+
+    <!-- TOOLBAR -->
+    <include
+        android:id="@+id/mainToolbar"
+        layout="@layout/activity_toolbar" />
+
+    <!-- PAGE TITLE -->
+    <TextView
+        android:id="@+id/txtPageTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fracture First Aid"
+        android:textSize="22sp"
+        android:textColor="#CC1616"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:fontFamily="@font/poppins"
+        android:layout_below="@id/mainToolbar"
+        android:padding="16dp" />
+
+    <!-- FLOATING BUTTON AT BOTTOM -->
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/btn_speak_instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="▶️ Speak Instructions"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        app:backgroundTint="#8E7CC3"
+        app:icon="@null"
+        android:elevation="6dp" />
+
+    <!-- SCROLLABLE CONTENT -->
+    <ScrollView
+        android:id="@+id/scrollContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/txtPageTitle"
+        android:layout_above="@id/btn_speak_instructions"
+        android:fillViewport="true"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="16dp">
+
+        <LinearLayout
+            android:id="@+id/instruction_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- STEPS -->
+            <TextView
+                android:text="➤  Steps to Follow"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:background="@drawable/bluebg"
+                android:textColor="#1A237E"
+                android:fontFamily="@font/poppins"
+                android:layout_marginBottom="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="1. Ask the person to stay completely still and avoid moving the injured limb."
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="2. Support the injured area in the same position using folded cloth, towel, or clothing."
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="3. Reduce swelling with a cold cloth or chilled bottle wrapped in fabric for 10–15 minutes."
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="4. Keep the person comfortable and avoid unnecessary movement."
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="5. Seek medical help immediately if pain, deformity, or numbness occurs."
+                android:textSize="16sp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!-- DON'TS -->
+            <TextView
+                android:text="🚫 Avoid These Actions"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@drawable/redbg"
+                android:fontFamily="@font/poppins"
+                android:textColor="#CC1616"
+                android:layout_marginBottom="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="❌ Do NOT try to straighten a bent limb."
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="❌ Do NOT push visible bone back inside."
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="❌ Do NOT restrict blood flow."
+                android:textSize="16sp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🔍 Possible Causes"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:background="@drawable/greenbg"
+                android:fontFamily="@font/poppins"
+                android:textColor="#2E7D32"
+                android:layout_marginBottom="12dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Falls from height or slipping"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Road accidents or crashes"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Sports injuries or heavy impact"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Sudden twisting or force on bones"
+                android:textSize="16sp"
+                android:layout_marginBottom="20dp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

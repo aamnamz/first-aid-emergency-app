@@ -1,0 +1,318 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F6FF">
+
+    <include
+        android:id="@+id/mainToolbar"
+        layout="@layout/activity_toolbar" />
+
+    <TextView
+        android:id="@+id/txtHeading"
+        android:text="Emergency Contacts"
+        android:textColor="#1A237E"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_below="@id/mainToolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtBelowEmergency"
+        android:text="Tap a button to call"
+        android:textColor="#7A8195"
+        android:textSize="16sp"
+        android:layout_below="@id/txtHeading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtBelowEmergency"
+        android:layout_marginTop="15dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp">
+
+        <!-- Chhipa Ambulance -->
+        <LinearLayout
+            android:id="@+id/chhipaRow"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/contact_card"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/ambulance"
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+
+            <TextView
+                android:text="Chhipa Ambulance"
+                android:textColor="#1A237E"
+                android:textSize="18sp"
+                android:layout_marginStart="15dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="1020"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:background="@drawable/red_call_button">
+
+            </TextView>
+        </LinearLayout>
+
+        <!-- Police -->
+        <LinearLayout
+            android:id="@+id/policeRow"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/contact_card"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/police"
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+
+            <TextView
+                android:text="Police Helpline"
+                android:textColor="#1A237E"
+                android:textSize="18sp"
+                android:layout_marginStart="15dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="15"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:background="@drawable/red_call_button"/>
+        </LinearLayout>
+
+        <!-- Fire Brigade -->
+        <LinearLayout
+            android:id="@+id/fireRow"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/contact_card"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/fire"
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+
+            <TextView
+                android:text="Fire Brigade"
+                android:textColor="#1A237E"
+                android:textSize="18sp"
+                android:layout_marginStart="15dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="16"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:background="@drawable/red_call_button"/>
+        </LinearLayout>
+
+        <!-- Edhi Ambulance -->
+        <LinearLayout
+            android:id="@+id/edhiRow"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/contact_card"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/ambulance"
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+
+            <TextView
+                android:text="Edhi Ambulance"
+                android:textColor="#1A237E"
+                android:textSize="18sp"
+                android:layout_marginStart="15dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="115"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:background="@drawable/red_call_button"/>
+        </LinearLayout>
+
+        <!-- NDMA -->
+        <LinearLayout
+            android:id="@+id/ndmaRow"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/contact_card"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/helpline"
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+
+            <TextView
+                android:text="NDMA Helpline"
+                android:textColor="#1A237E"
+                android:textSize="18sp"
+                android:layout_marginStart="15dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="051-9205037"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:background="@drawable/red_call_button"/>
+        </LinearLayout>
+
+        <!-- Burns Center -->
+        <LinearLayout
+            android:id="@+id/burnsRow"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/contact_card"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/hospital"
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+
+            <TextView
+                android:text="Burns
+                Center"
+                android:textColor="#1A237E"
+                android:textSize="18sp"
+                android:layout_marginStart="15dp"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="021-99215740"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:background="@drawable/red_call_button"/>
+        </LinearLayout>
+
+        <!-- Poison Center -->
+        <LinearLayout
+            android:id="@+id/poisonRow"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/contact_card"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/center"
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+
+            <TextView
+                android:text="Poison Center"
+                android:textColor="#1A237E"
+                android:textSize="18sp"
+                android:layout_marginStart="15dp"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="021-99215752"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:background="@drawable/red_call_button"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

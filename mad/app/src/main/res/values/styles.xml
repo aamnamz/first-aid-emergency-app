@@ -1,0 +1,6 @@
+<resources>
+    <style name="ShapeAppearance.App.InputLayout" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+</resources>
