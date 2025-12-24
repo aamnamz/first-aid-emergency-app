@@ -30,4 +30,27 @@ A multilingual emergency assistance Android application with voice recognition a
 <uses-permission android:name="android.permission.CALL_PHONE" />
 <uses-permission android:name="android.permission.RECORD_AUDIO" />
 <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+🚀 Installation & Setup
+Prerequisites
+Android Studio Arctic Fox or later
+
+Android SDK 30+
+
+Minimum API Level: 21 (Android 5.0)
+
+Build Instructions
+bash
+# Clone repository
+git clone https://github.com/YOURUSERNAME/first-aid-emergency-app.git
+
+# Open in Android Studio
+# Build → Make Project
+# Run on device/emulator
+APK Generation
+bash
+# Generate debug APK
+./gradlew assembleDebug
+
+# APK location: app/build/outputs/apk/debug/
 <uses-permission android:name="android.permission.INTERNET" />
