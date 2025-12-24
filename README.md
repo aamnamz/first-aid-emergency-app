@@ -82,3 +82,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 👨‍💻 Developer
 Amna Mumtaz - Software Engineering Student @ IIUI
+
+Note: This app is for educational purposes. In real emergencies, contact professional medical help immediately.
