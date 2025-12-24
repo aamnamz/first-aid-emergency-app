@@ -54,3 +54,31 @@ bash
 
 # APK location: app/build/outputs/apk/debug/
 <uses-permission android:name="android.permission.INTERNET" />
+
+🔧 Technologies Used
+Language: Java (Android)
+
+IDE: Android Studio
+
+Database: SQLite
+
+APIs: Google Maps, Android Speech-to-Text
+
+Version Control: Git/GitHub
+
+🤝 Contributing
+Fork the repository
+
+Create a feature branch (git checkout -b feature/improvement)
+
+Commit changes (git commit -m 'Add some feature')
+
+Push to branch (git push origin feature/improvement)
+
+Open a Pull Request
+
+📄 License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+👨‍💻 Developer
+Amna Mumtaz - Software Engineering Student @ IIUI
