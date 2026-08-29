@@ -1,5 +1,7 @@
 # 🚑 First Aid Emergency App
 
+**Academic Project — 2025**
+
 ### Multilingual First Aid & Emergency Assistance for Android
 
 A multilingual Android application developed for the **Mobile Application Development (MAD)** course, designed to provide accessible first-aid guidance and quick access to emergency services through **Urdu and English voice recognition, GPS-based hospital discovery, and emergency calling**.
